@@ -25,3 +25,18 @@ dev = [
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/friend"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["ALL"]
+
+[tool.black]
+line-length = 120
+
+[tool.mypy]
+strict = true
+
+[tool.pytest.ini_options]
+addopts = "-vvv"
