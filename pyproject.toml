@@ -8,6 +8,9 @@ dependencies = [
     "litellm>=1.83.4",
 ]
 
+[project.scripts]
+friend = "friend.main:main"
+
 [tool.uv]
 package = true
 
