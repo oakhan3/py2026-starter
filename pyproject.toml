@@ -47,4 +47,4 @@ warn_unused_ignores = true
 enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool", "possibly-undefined", "unused-awaitable", "unused-ignore"]
 
 [tool.pytest.ini_options]
-addopts = "-vvv --cov=src/friend --cov-report=term-missing --cov-report=html --cov-report=xml"
+addopts = "-vvv --cov=src/friend --cov-report=term-missing --cov-report=html --cov-report=xml --cov-fail-under=80"
