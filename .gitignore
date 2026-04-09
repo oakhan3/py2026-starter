@@ -8,3 +8,20 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Coverage
+.coverage
+coverage.xml
+htmlcov/
+
+# mypy
+.mypy_cache/
+
+# ruff
+.ruff_cache/
+
+# pytest
+.pytest_cache/
+
+# macOS
+.DS_Store
