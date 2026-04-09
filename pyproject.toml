@@ -32,7 +32,7 @@ line-length = 120
 
 [tool.ruff.lint]
 select = ["ALL"]
-ignore = ["D100", "D103", "D104", "D203", "D212"]
+ignore = ["D100", "D101", "D102", "D103", "D104", "D203", "D212"]
 
 [tool.ruff.lint.per-file-ignores]
 "tests/**" = ["S101", "T201"]
@@ -42,6 +42,9 @@ line-length = 120
 
 [tool.mypy]
 strict = true
+warn_unreachable = true
+warn_unused_ignores = true
+enable_error_code = ["ignore-without-code", "redundant-expr", "truthy-bool", "possibly-undefined", "unused-awaitable", "unused-ignore"]
 
 [tool.pytest.ini_options]
 addopts = "-vvv --cov=src/friend --cov-report=term-missing --cov-report=html --cov-report=xml"
