@@ -1,12 +1,12 @@
 .PHONY: lint format test
 
 lint:
-	ruff check src
-	mypy src
+	uv run ruff check src tests
+	uv run mypy src tests
 
 format:
-	black src
-	ruff check --fix src
+	uv run black src tests
+	uv run ruff check --fix src tests
 
 test:
-	pytest tests -x
+	uv run pytest tests -x
